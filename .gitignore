@@ -2,4 +2,4 @@
 *.pyc
 *.pot
 *__pycache__/
-*.ipynb_checkpointsgit
+*.ipynb_checkpoints
