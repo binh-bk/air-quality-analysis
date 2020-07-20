@@ -1,0 +1,5 @@
+*.log
+*.pyc
+*.pot
+*__pycache__/
+*.ipynb_checkpointsgit
