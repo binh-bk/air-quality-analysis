@@ -13079,7 +13079,7 @@ div#notebook {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Plan:">Plan:<a class="anchor-link" href="#Plan:">&#182;</a></h1><ul>
 <li>make graphs from a .csv (a simpler version of speadsheet and akin to text file)</li>
-<li>use Python and Pandas library to clean data, explore and make simple graph</li>
+<li>use Python and <code>pandas</code> library to clean data, explore and make simple graph</li>
 <li>work with built-in function to discover statistics</li>
 </ul>
 
@@ -13092,7 +13092,7 @@ div#notebook {
 <h1 id="Before-you-start:">Before you start:<a class="anchor-link" href="#Before-you-start:">&#182;</a></h1><ul>
 <li>this Jupyter notebook, code, and software were prepared using <code>Ubuntu 18.04LTS</code>, <code>Python3.6.9</code></li>
 <li>If you are using Windows, or even a Mac, I recommend to jump on <a href="https://www.anaconda.com/products/individual">Anaconda</a> suite. Scroll to the bottom of the page, you will see the package for your system. Select <code>Graphic</code> option to make your life a bit easier (for now).</li>
-<li>Alternatively, try the <a href="https://colab.research.google.com/"><strong>Google Colaboratory</strong></a> that should have most of the packages available to you</li>
+<li>Alternatively, try <a href="https://colab.research.google.com/"><strong>Google Colaboratory</strong></a> that should have most of the packages available to you</li>
 </ul>
 
 </div>
@@ -13284,7 +13284,7 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># let get year contain the whole year. For Hanoi, I selected 2018. </span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># let get a file contained the whole year data. For Hanoi, I selected 2018. For 2019, only few months to the end of the yeear is availbe</span>
 <span class="c1"># Right click and Save As `data` folder or</span>
 <span class="o">!</span>wget http://dosairnowdata.org/dos/historical/Hanoi/2018/Hanoi_PM2.5_2018_YTD.csv -P ./data/
 </pre></div>
@@ -13363,6 +13363,7 @@ Hanoi_PM2.5_2018_YT 100%[===================&gt;] 842.12K   498KB/s    in 1.7s
 <li>The file is available in your local drive, you can examine by text editor or Excel-liked program </li>
 <li>Reduce load on the server, especially when one first tries out the code unintentionally request one file multiple times</li>
 <li>Alternatively, a <code>csv</code> file can be read directly into a <code>DataFrame</code> (similar to a <code>Sheet</code>) by <code>pandas</code></li>
+<li>and faster</li>
 </ul>
 
 </div>
@@ -13608,7 +13609,7 @@ memory usage: 912.2+ KB
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li>there is many conlumns included for its completedness. such as <code>Site</code>, <code>Parameter</code>, <code>Conc.(entration) Unit</code>...</li>
+<li>there is many coluumns included for its completeness. such as <code>Site</code>, <code>Parameter</code>, <code>Conc.(entration) Unit</code>...</li>
 <li>Most columns contain 8339 rows, AQI Category has 8100 rows. The lesser row is resulted from the method to calculate AQI (Air Quality Index), a final number for public.</li>
 <li>Three important columns are <code>Date (LT)</code>, <code>Raw Conc.</code>, <code>QC Name</code>. Other columns are derived from these three columns.</li>
 </ul>
@@ -13817,7 +13818,7 @@ memory usage: 912.2+ KB
 <ul>
 <li>uhm, this is not really make the data is easier to see the trend, </li>
 <li>the <code>-999</code>s make the graph skewed and cannot see the trend.</li>
-<li>Make a quick fix</li>
+<li>let make a quick fix by removing <code>-999</code> values</li>
 </ul>
 
 </div>
@@ -13864,7 +13865,8 @@ memory usage: 912.2+ KB
 <div class="prompt input_prompt">In&nbsp;[71]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Raw Conc.&#39;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">][</span><span class="s1">&#39;Raw Conc.&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span><span class="mi">5</span><span class="p">),</span> <span class="n">legend</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># filter out negative values in Raw Conc column</span>
+<span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Raw Conc.&#39;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">][</span><span class="s1">&#39;Raw Conc.&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span><span class="mi">5</span><span class="p">),</span> <span class="n">legend</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13911,9 +13913,9 @@ memory usage: 912.2+ KB
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li>this techniue is called <code>filtering</code></li>
-<li>first <code>df['Raw Conc.'] &gt; 0</code> yield a table with <code>False</code> or <code>True</code> value for each cell</li>
-<li>only cells wiht <code>True</code> value selected by <code>df[df['Raw Conc.']</code></li>
+<li>this technique is called <code>filtering</code></li>
+<li>first <code>df['Raw Conc.'] &gt; 0</code> yields a maxtrix (table) with <code>False</code> or <code>True</code> value for each cell</li>
+<li>only cells with <code>True</code> value selected by <code>df[df['Raw Conc.']</code></li>
 <li>Next the column <code>Raw Conc.</code> is selected by <code>df[df['Raw Conc.']['Raw Conc.']</code></li>
 <li>finally, <code>plot</code> function is called to display to clean data</li>
 </ul>
@@ -14537,16 +14539,16 @@ memory usage: 383.9+ KB
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Operations</strong></p>
-<p>one line of codev above essentially performed three things:</p>
+<p>one line of code above essentially performed three things:</p>
 <ol>
-<li>Reduced dimesion from 5 columns to one column (in addition to the index column) by <code>df2[['Raw Conc.']]</code> (the double square brackets are key here)</li>
+<li>Reduced dimension from 5 columns to one column (in addition to the index column) by <code>df2[['Raw Conc.']]</code> (the double square brackets are key here)</li>
 <li>Grouped <code>Raw Conc.</code> by an interval of one day in <code>resample('1D')</code>, change <code>1D</code> to <code>10D</code>, or <code>30D</code> adjusts the interval</li>
 <li>Calculated <code>mean()</code> of aggregated data, other function such as <code>std()</code> works as well</li>
 <li>finally, plotting</li>
 </ol>
 <p><strong>Interpretation</strong></p>
 <ul>
-<li>PM2.5 or particulate mattters that has a diameter of 2.5 micrometer or less is one of outdoor pollutant regulated </li>
+<li>PM<sub>2.5</sub> or particulate mattters that has a diameter of 2.5 micrometer or less is one of outdoor pollutant regulated </li>
 <li>depend on the country, the standard (or recommendation) of daily concentration is different </li>
 <li>The recommendation of WHO is <a href="https://apps.who.int/iris/bitstream/handle/10665/69477/WHO_SDE_PHE_OEH_06.02_eng.pdf">25 &mu;g/m<sup>3</sup></a> daily average, <a href="https://www.epa.gov/pm-pollution/2006-national-ambient-air-quality-standards-naaqs-particulate-matter-pm25">35 &mu;g/m<sup>3</sup></a> by US EPA, and <a href="https://www.env.go.jp/air/tech/ine/asia/vietnam/files/law/QCVN%2005-2013.pdf">50 &mu;g/m<sup>3</sup></a> by Vietname Environmental Administration</li>
 </ul>
@@ -14610,7 +14612,7 @@ memory usage: 383.9+ KB
 <p>this one line of code performs three primary operations as one:</p>
 <ol>
 <li>Group all values in <code>QC Name</code> columns (<code>df.groupby('QC Name')</code> into category</li>
-<li>filter by one column <code>Raw Conc.</code> to reduce the DataFrame (matrix mxn) to series (two columns x rows)</li>
+<li>Filter by one column <code>Raw Conc.</code> to reduce the DataFrame (matrix mxn) to series (two columns x rows)</li>
 <li><code>count()</code> the value of each tag (<code>Valid</code>, <code>Missing</code>, <code>Invalid</code>, <code>Suspect</code> (not in here but you may found with other files)</li>
 <li>Call <code>plot</code> to display to count of each instances</li>
 </ol>
@@ -14872,120 +14874,6 @@ memory usage: 383.9+ KB
 <h2 id="--lineplot-is-the-most-simple-one-(beside-scatter),-for-this-setup,-seaborn-has-not-demonstrated-its-advantages,">- lineplot is the most simple one (beside scatter), for this setup, seaborn has not demonstrated its advantages,<a class="anchor-link" href="#--lineplot-is-the-most-simple-one-(beside-scatter),-for-this-setup,-seaborn-has-not-demonstrated-its-advantages,">&#182;</a></h2>
 </div>
 </div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[162]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">fmri</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">load_dataset</span><span class="p">(</span><span class="s2">&quot;fmri&quot;</span><span class="p">)</span>
-<span class="n">fmri</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[162]:</div>
-
-
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>subject</th>
-      <th>timepoint</th>
-      <th>event</th>
-      <th>region</th>
-      <th>signal</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>s13</td>
-      <td>18</td>
-      <td>stim</td>
-      <td>parietal</td>
-      <td>-0.017552</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>s5</td>
-      <td>14</td>
-      <td>stim</td>
-      <td>parietal</td>
-      <td>-0.080883</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>s12</td>
-      <td>18</td>
-      <td>stim</td>
-      <td>parietal</td>
-      <td>-0.081033</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>s11</td>
-      <td>18</td>
-      <td>stim</td>
-      <td>parietal</td>
-      <td>-0.046134</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>s10</td>
-      <td>18</td>
-      <td>stim</td>
-      <td>parietal</td>
-      <td>-0.037970</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -15668,20 +15556,6 @@ Name: AQI Category, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[283]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">std_</span> <span class="o">=</span> <span class="n">std</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">shape</span>
-<span class="n">mean_</span> <span class="o">=</span> <span class="n">dft</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">shape</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
 <div class="prompt input_prompt">In&nbsp;[296]:</div>
 <div class="inner_cell">
     <div class="input_area">
@@ -15976,18 +15850,15 @@ Name: AQI Category, dtype: int64</pre>
 </div>
 
 </div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[334]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># comprehensive for pie: https://blog.algorexhealth.com/2018/03/almost-10-pie-charts-in-10-python-libraries/</span>
-</pre></div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>ref comprehensive for pie: <a href="https://blog.algorexhealth.com/2018/03/almost-10-pie-charts-in-10-python-libraries/">https://blog.algorexhealth.com/2018/03/almost-10-pie-charts-in-10-python-libraries/</a></li>
+</ul>
 
-    </div>
 </div>
 </div>
-
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -16071,10 +15942,11 @@ Name: AQI Category, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[441]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">aqi</span> <span class="o">=</span> <span class="p">{</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># a dictionary for PM2.5 category</span>
+<span class="n">aqi</span> <span class="o">=</span> <span class="p">{</span>
     <span class="s1">&#39;Good&#39;</span><span class="p">:{</span><span class="s1">&#39;pm2.5&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">12</span><span class="p">],</span> <span class="s1">&#39;color&#39;</span><span class="p">:</span> <span class="s1">&#39;green&#39;</span><span class="p">},</span>
     <span class="s1">&#39;Moderate&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;pm2.5&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mf">12.1</span><span class="p">,</span> <span class="mf">35.4</span><span class="p">],</span> <span class="s1">&#39;color&#39;</span><span class="p">:</span> <span class="s1">&#39;yellow&#39;</span><span class="p">},</span>
     <span class="s1">&#39;Unhealthy for Sensitive Groups&#39;</span><span class="p">:{</span><span class="s1">&#39;pm2.5&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mf">35.5</span><span class="p">,</span> <span class="mi">55</span><span class="p">,</span><span class="mi">4</span><span class="p">],</span> <span class="s1">&#39;color&#39;</span><span class="p">:</span> <span class="s1">&#39;orange&#39;</span><span class="p">},</span>
@@ -16229,7 +16101,8 @@ Name: Raw Conc., dtype: int64</pre>
 <div class="prompt input_prompt">In&nbsp;[371]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">pie</span><span class="p">(</span><span class="n">for_pie2</span><span class="p">,</span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># notice that the color is messed up, we will fix by the end</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">pie</span><span class="p">(</span><span class="n">for_pie2</span><span class="p">,</span> 
         <span class="n">labels</span><span class="o">=</span><span class="nb">list</span><span class="p">(</span><span class="n">for_pie2</span><span class="o">.</span><span class="n">index</span><span class="p">),</span>
         <span class="n">colors</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;yellow&#39;</span><span class="p">,</span> <span class="s1">&#39;orange&#39;</span><span class="p">,</span> <span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="s1">&#39;green&#39;</span><span class="p">,</span> <span class="s1">&#39;purple&#39;</span><span class="p">],</span> <span class="n">autopct</span><span class="o">=</span><span class="s1">&#39;</span><span class="si">%1.1f%%</span><span class="s1">&#39;</span><span class="p">);</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;AQI ratios by Raw Conc., Hanoi 2018&#39;</span><span class="p">);</span>
@@ -16456,11 +16329,26 @@ Name: Raw Conc., dtype: int64</pre>
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Concluding-notes">Concluding notes<a class="anchor-link" href="#Concluding-notes">&#182;</a></h1><ul>
-<li>Python, <code>pandas</code>, <code>matplotlib</code>, <code>seaborn</code> are more approachable to work with data (than we presu</li>
+<li>Python, <code>pandas</code>, <code>matplotlib</code>, <code>seaborn</code> are more approachable to work with data (than we presume)</li>
+<li><code>pandas</code> is capable of performs several operations in one line easierly, give you a high level of summary</li>
+<li><code>matplotlib</code> with <code>seaborn</code> gives you options to be flexible or a quick setup </li>
 </ul>
 
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
 </div>
     </div>
   </div>
