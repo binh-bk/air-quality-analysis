@@ -8,15 +8,15 @@ Jupyter notebooks and Python code for analyzing air quality (fine particle, PM2.
 - here are some graphs produced from this exercise
   - basic line chart
   <p align="center">
-  <img src="img/2020Jul_hanoi.png"/>
+  <img style="width: 70%" src="img/2020Jul_hanoi.png"/>
 </p>
   - line chart with a band for standard deviation
   <p align="center">
-  <img src="img/2020Jul-pm25.png"/>
+  <img style="width: 70%" src="img/2020Jul-pm25.png"/>
 </p>
   - pie chart with Air Quality Index (AQI) 
   <p align="center">
-  <img style="width: 80%" src="img/2020Jul-AQI.png"/>
+  <img style="width: 70%" src="img/2020Jul-AQI.png"/>
 </p>
 
 ## correlation
