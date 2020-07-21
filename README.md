@@ -16,7 +16,7 @@ Jupyter notebooks and Python code for analyzing air quality (fine particle, PM2.
 </p>
   - pie chart with Air Quality Index (AQI) 
   <p align="center">
-  <img src="img/2020Jul-AQI.png/>
+  <img style="width: 80%" src="img/2020Jul-AQI.png"/>
 </p>
 
 ## correlation
