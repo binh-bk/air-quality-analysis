@@ -7,11 +7,17 @@ Jupyter notebooks and Python code for analyzing air quality (fine particle, PM2.
 - work with a CSV file from [Airnow.gov](https://www.airnow.gov/international/us-embassies-and-consulates/)
 - here are some graphs produced from this exercise
   - basic line chart
-  [!img](img/2020Jul_hanoi.png)
+  <p align="center">
+  <img src="img/2020Jul_hanoi.png"/>
+</p>
   - line chart with a band for standard deviation
-  [!img](img/2020Jul-pm25.png)
+  <p align="center">
+  <img src="img/2020Jul-pm25.png"/>
+</p>
   - pie chart with Air Quality Index (AQI) 
-  [!img](img/2020Jul-AQI.png)  
+  <p align="center">
+  <img src="img/2020Jul-AQI.png/>
+</p>
 
 ## correlation
 
