@@ -1,5 +1,5 @@
 # air-quality-analysis
-Jupyter notebooks and Python code for analyzing air quality (fine particle, PM2.5) 
+Jupyter notebooks and Python code for analyzing air quality (fine particles, PM<sub>2.5</sub>) 
 
 ## Start from basic
 - introduce to basic setup of folder, install `pandas`, `matplotlib`, `seaborn` (using `pip` for Python package), `Anaconda` is a good choice if you are using Windows (or even Mac, Linux). Alternatively, try out [**Google Colaboratory**](https://colab.research.google.com/)
