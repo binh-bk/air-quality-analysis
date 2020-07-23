@@ -30,3 +30,9 @@ Jupyter notebooks and Python code for analyzing air quality (fine particles, PM<
 
 ## tools
 
+## Credits:
+- some of the writing and coding is carried out while I were working with [PAM Air](pamair.org) project.  I appreciate the flexiblity from the management so that I can make this happen.
+
+## If this work is helpful to your research
+- Admittedly, citing Github repository or other open project is new, but if this work is helpful for your work, I would appreciate the attribution
+- To cite this work, use this `Binh Nguyen, Air Quality Analysis, GitHub repository: https://github.com/binh-bk/air-quality-analysis`
