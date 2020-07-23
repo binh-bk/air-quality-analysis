@@ -21,8 +21,12 @@ Jupyter notebooks and Python code for analyzing air quality (fine particles, PM<
 
 # TODO
 ## correlation
+### Correlation with time
+
+### Correlation with wind and temperature
 
 
+### Correlation with MERRA-2 data
 
 ## building prediction
 
