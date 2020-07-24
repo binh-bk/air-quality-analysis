@@ -33,7 +33,7 @@ Jupyter notebooks and Python code for analyzing air quality (fine particles, PM<
   </p>
 - a summary graph of this dataset
   <p align="center">
-    <img style="width: 70%" src="img/2020Jul_pm25_time.png"/>
+    <img style="width: 70%" src="img/2020Jul-pm25-time.png"/>
   </p>
   
 
