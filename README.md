@@ -1,7 +1,7 @@
 # air-quality-analysis
 Jupyter notebooks and Python code for analyzing air quality (fine particles, PM<sub>2.5</sub>) 
 
-## 1.Start from basic
+## 1. Basic data visualize
 - introduce to basic setup of folder, install `pandas`, `matplotlib`, `seaborn` (using `pip` for Python package), `Anaconda` is a good choice if you are using Windows (or even Mac, Linux). Alternatively, try out [**Google Colaboratory**](https://colab.research.google.com/)
 - basic use of those tools (clean, explore, plot, interpret)
 - work with a CSV file from [Airnow.gov](https://www.airnow.gov/international/us-embassies-and-consulates/)
@@ -14,16 +14,28 @@ Jupyter notebooks and Python code for analyzing air quality (fine particles, PM<
   - line chart with a band for standard deviation
   <p align="center">
     <img style="width: 70%" src="img/2020Jul-pm25.png"/>
-  </p
-  >
+  </p>
   - pie chart with Air Quality Index (AQI) 
   <p align="center">
     <img style="max-width: 600px;" src="img/2020Jul-AQI.png"/>
   </p>
 
 # TODO
-## correlation
-### Correlation with time
+## 2. Correlation of PM<sub>2.5</sub>
+### 2.1 Correlation of PM<sub>2.5</sub> with time
+- continue to work with the .CSV file from **AirNow.Gov** to explore the correlation between PM<sub>2.5</sub> and time such as:
+  - peak-traffic hours vs. non-peak traffic hours
+  - weekends vs. weekdays
+  - variation of each months
+- here is some graphs produced from this exercise
+  <p align="center">
+    <img style="width: 70%" src="img/2020Jul-peakhours.png"/>
+  </p>
+- a summary graph of this dataset
+  <p align="center">
+    <img style="width: 70%" src="img/2020Jul-pm25_time.png"/>
+  </p>
+  
 
 ### Correlation with wind and temperature
 
