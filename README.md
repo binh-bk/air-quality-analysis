@@ -20,7 +20,7 @@ Jupyter notebooks and Python code for analyzing air quality (fine particles, PM<
     <img style="max-width: 600px;" src="img/2020Jul-AQI.png"/>
   </p>
 
-# TODO
+
 ## 2. Correlation of PM<sub>2.5</sub>
 ### 2.1 Correlation of PM<sub>2.5</sub> with time
 - continue to work with the .CSV file from **AirNow.Gov** to explore the correlation between PM<sub>2.5</sub> and time such as:
@@ -36,6 +36,7 @@ Jupyter notebooks and Python code for analyzing air quality (fine particles, PM<
     <img style="width: 70%" src="img/2020Jul-pm25-time.png"/>
   </p>
   
+# TODO
 
 ### Correlation with wind and temperature
 
