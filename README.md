@@ -20,7 +20,7 @@ Jupyter notebooks and Python code for analyzing air quality (fine particles, PM<
     <img style="max-width: 600px;" src="img/2020Jul-AQI.png"/>
   </p>
 
-# TODO
+
 ## 2. Correlation of PM<sub>2.5</sub>
 ### 2.1 Correlation of PM<sub>2.5</sub> with time
 - continue to work with the .CSV file from **AirNow.Gov** to explore the correlation between PM<sub>2.5</sub> and time such as:
@@ -33,9 +33,10 @@ Jupyter notebooks and Python code for analyzing air quality (fine particles, PM<
   </p>
 - a summary graph of this dataset
   <p align="center">
-    <img style="width: 70%" src="img/2020Jul_pm25_time.png"/>
+    <img style="width: 70%" src="img/2020Jul-pm25-time.png"/>
   </p>
   
+# TODO
 
 ### Correlation with wind and temperature
 
@@ -52,5 +53,5 @@ Jupyter notebooks and Python code for analyzing air quality (fine particles, PM<
 - some of the writing and coding are carried out while I am working with [PAM Air](pamair.org) project.  I appreciate the flexiblity from the management so that I can make this happen.
 
 ## If this work is helpful to your research
-- Admittedly, citing Github repository or other open project is new, but if this work is helpful for your work, I would appreciate the attribution
+- Admittedly, citing Github repository or other open project is new, but if this work is helpful for your work, I would appreciate the attribution, a link or a word.
 - To cite this work, use this `Binh Nguyen, Air Quality Analysis, GitHub repository: https://github.com/binh-bk/air-quality-analysis`
