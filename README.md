@@ -35,10 +35,20 @@ Jupyter notebooks and Python code for analyzing air quality (fine particles, PM<
   <p align="center">
     <img style="width: 70%" src="img/2020Jul-pm25-time.png"/>
   </p>
+
+
+### Correlation of PM<sub>2.5</sub> with wind and temperature (data cleaning)
+- explore data source (specifically working with archieved meteorologcal data from [NOAA.GOV](ncei.noaa.gov)
+- clean the data (which is formatted with Integrated Surface Data (ISD) style)
+- use `windrose` package to make windrose plot
+
+  <p align="center">
+    <img style="width: 70%" src="img/2020Jul_windrose_noibai_hadong.png"/>
+  </p>
   
 # TODO
 
-### Correlation with wind and temperature
+### Correlation with wind and temperature (analysis
 
 
 ### Correlation with MERRA-2 data
