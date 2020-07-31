@@ -8,16 +8,16 @@ Jupyter notebooks and Python code for analyzing air quality (fine particles, PM<
 - here are some graphs produced from this exercise
   - basic line chart
   <p align="center">
-    <img style="width: 70%" src="img/2020Jul_hanoi.png"/>
+    <img style="width: 100%;" src="img/2020Jul_hanoi.png"/>
   </p>
   
   - line chart with a band for standard deviation
   <p align="center">
-    <img style="width: 70%" src="img/2020Jul-pm25.png"/>
+    <img style="width: 100%" src="img/2020Jul-pm25.png"/>
   </p>
   - pie chart with Air Quality Index (AQI) 
   <p align="center">
-    <img style="max-width: 600px;" src="img/2020Jul-AQI.png"/>
+    <img style="max-width: 100%;" src="img/2020Jul-AQI.png"/>
   </p>
 
 
@@ -35,10 +35,20 @@ Jupyter notebooks and Python code for analyzing air quality (fine particles, PM<
   <p align="center">
     <img style="width: 70%" src="img/2020Jul-pm25-time.png"/>
   </p>
+
+
+### 2.2 Correlation of PM<sub>2.5</sub> with wind and temperature (data cleaning)
+- explore data source (specifically working with archieved meteorologcal data from [NOAA.GOV](ncei.noaa.gov)
+- clean the data (which is formatted with Integrated Surface Data (ISD) style)
+- use `windrose` package to make windrose plot
+
+  <p align="center">
+    <img style="width: 70%" src="img/2020Jul_windrose_noibai_hadong.png"/>
+  </p>
   
 # TODO
 
-### Correlation with wind and temperature
+### 2.2 Correlation with wind and temperature (analysis)
 
 
 ### Correlation with MERRA-2 data
