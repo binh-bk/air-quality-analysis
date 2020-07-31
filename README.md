@@ -62,7 +62,11 @@ Jupyter notebooks and Python code for analyzing air quality (fine particles, PM<
     <p align="center">
     <img src="img/2020Jul_mixing_feb.png"/>
     </p>
+  - or, I want to see other inputs such as.. 
   
+    <p align="center">
+    <img src="img/2020Jul_all_params.png"/>
+    </p>
 
 
 # TODO
