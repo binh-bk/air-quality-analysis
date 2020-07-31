@@ -45,16 +45,35 @@ Jupyter notebooks and Python code for analyzing air quality (fine particles, PM<
   <p align="center">
     <img style="width: 70%" src="img/2020Jul_windrose_noibai_hadong.png"/>
   </p>
-  
-# TODO
 
 ### 2.2 Correlation with wind and temperature (analysis)
+- explore correlation between meteorological paramters to observed PM<sub>2.5<sub> concentration such wind, temperature, height above ground
+- capture espisode and examine relevant inputs with PM<sub>2.5</sub>
+- some examples from this exercise
+  - correlation graph:
+  <p align="center">
+    <img src="img/2020Jul_corr_pm25.png"/>
+  </p>
+  - what method in *that* correlation?
+    <p align="center">
+    <img src="img/2020Jul_corr_method.png"/>
+    </p>
+  - a high PM<sub>2.5</sub> and a cloudy day
+    <p align="center">
+    <img src="img/2020Jul_mixing_feb.png"/>
+    </p>
+  - or, I want to see other inputs such as.. 
+  
+    <p align="center">
+    <img src="img/2020Jul_all_params.png"/>
+    </p>
 
+
+# TODO
 
 ### Correlation with MERRA-2 data
 
 ## building prediction
-
 
 
 ## tools
