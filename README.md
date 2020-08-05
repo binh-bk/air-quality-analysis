@@ -67,19 +67,32 @@ Jupyter notebooks and Python code for analyzing air quality (fine particles, PM<
     <p align="center">
     <img src="img/2020Jul_all_params.png"/>
     </p>
-
+### Correlation with MERRA-2 data
+- work with [MERRA-2](https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/) reanalysis data from NASA
+- find the correlation from main groups (single level, surface turbulent flux, aerosols mixing ratio) and PM<sub>2.5</sub>
+- here is the 3 summary graphs:
+  - Single level diagnosis
+  <p align="center">
+    <img src="img/2020Aug-SLV-subplot.png"/>
+  </p>
+  - surface turbulent flux
+  <p align="center">
+    <img src="img/2020Aug-FLX-subplot.png"/>
+  </p>
+  
+  - Aerosol mixing:
+  <p align="center">
+    <img src="img/2020Aug-AER-subplot.png"/>
+  </p>
 
 # TODO
-
-### Correlation with MERRA-2 data
-
 ## building prediction
 
 
 ## tools
 
 ## Credits:
-- some of the writing and coding are carried out while I am working with [PAM Air](pamair.org) project.  I appreciate the flexiblity from the management so that I can make this happen.
+- some of the writing and coding are carried out while I were working with [PAM Air](pamair.org) project.  I appreciate the flexiblity from the management so that I can make this happen.
 
 ## If this work is helpful to your research
 - Admittedly, citing Github repository or other open project is new, but if this work is helpful for your work, I would appreciate the attribution, a link or a word.
