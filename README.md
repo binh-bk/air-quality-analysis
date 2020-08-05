@@ -4,10 +4,15 @@ Jupyter notebooks and Python code for analyzing air quality (fine particles, PM<
 # Table of contents
 
 <a href="#1">1. Basic data visualization</a>  
+
 <a href="#2">2. Correlation of PM<sub>2.5</sub></a>  
-  <a href="#2.1">2. Correlation of PM<sub>2.5</sub> with time</sub></a>  
+
+  <a href="#2.1">2.1 Correlation of PM<sub>2.5</sub> with time</sub></a>  
+  
     <a href="#2.2.1">2.2. Correlation of PM<sub>2.5</sub> with wind and temperature (data cleaning)</sub></a>  
+    
     <a href="#2.2.2">2.2. Correlation with wind and temperature (analysis)</sub></a>  
+    
   <a href="#2.3">2.3 Correlation with MERRA-2 data</a>  
 <a href="#todo">TODO</a>  
 <a href="#credit">4. Credits</a>  
