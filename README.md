@@ -114,7 +114,7 @@ Jupyter notebooks and Python code for analyzing air quality (fine particles, PM<
       <img src="img/height.vs.pressure.png"/>
     </p>
     
-    - compare values from different source (such as from observed station, a public API, or reanalysis product
+    - compare values from different sources (such as from observed station, a public API, or reanalysis product)
       <p align="center">
         <img src="img/2020Aug-Temp-sources.png"/>
       </p>
