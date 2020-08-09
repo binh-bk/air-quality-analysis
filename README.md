@@ -4,12 +4,12 @@ Jupyter notebooks and Python code for analyzing air quality (fine particles, PM<
 # Table of contents
 
 <a href="#1">1. Basic data visualization</a>  
-
 <a href="#2">2. Correlation of PM<sub>2.5</sub></a>  
   <a href="#2.1">2.1 Correlation of PM<sub>2.5</sub> with time</sub></a>  
     <a href="#2.2.1">2.2. Correlation of PM<sub>2.5</sub> with wind and temperature (data cleaning)</sub></a>  
     <a href="#2.2.2">2.2. Correlation with wind and temperature (analysis)</sub></a>  
   <a href="#2.3">2.3 Correlation with MERRA-2 data</a>  
+  <a href="#2.4">2.4 Conversion wind (U,V) component, RH from temperatures </a>  
 <a href="#todo">TODO</a>  
 <a href="#credit">4. Credits</a>  
 
@@ -102,6 +102,29 @@ Jupyter notebooks and Python code for analyzing air quality (fine particles, PM<
   <p align="center">
     <img src="img/2020Aug-AER-subplot.png"/>
   </p>
+
+<a id="2.4"></a>
+### Conversion wind (U,V) component, RH from temperatures
+- a detour to look at conversion of wind data (U, V) vectors to speed and direction in degree
+- how to use **MetPy** packages calculate such conversion instead of manually undertake
+- explore data for the next which is selecting relevant data for predicting PM<sub>2.5</sub>
+- some graph examples:
+    - relation of height (to the ground) vs. pressure
+    <p align="center">
+      <img src="img/height.vs.pressure.png"/>
+    </p>
+    
+    - compare values from different source (such as from observed station, a public API, or reanalysis product
+      <p align="center">
+        <img src="img/2020Aug-Temp-sources.png"/>
+      </p>
+    
+    - correlation of wind speed in different altitude to PM<sub>2.5</sub> concentration
+      <p align="center">
+        <img src="img/2020Aug_wind_corr_heights_inc.png"/>
+      </p>
+    
+
 
 <a id="todo"></a>
 # TODO
