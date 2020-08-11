@@ -176,7 +176,7 @@ Jupyter notebooks and Python code for analyzing air quality (fine particles, PM<
 - the analysis is carried out on Jupyter Notebook (and later with Jupyter Lab 2.2), Ubuntu 18.04LTS. 
 - Python (3.6.9)
 - Matplotlib (3.1.2)
-- pandas (0.25.3)
+- pandas (1.1.0)
 - Seaborn (0.9.0)
 - windrose (N/A)
 - MetPy (1.0.0)
