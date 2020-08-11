@@ -10,6 +10,8 @@ Jupyter notebooks and Python code for analyzing air quality (fine particles, PM<
     <a href="#2.2.2">2.2. Correlation with wind and temperature (analysis)</sub></a>  
   <a href="#2.3">2.3 Correlation with MERRA-2 data</a>  
   <a href="#2.4">2.4 Conversion wind (U,V) component, RH from temperatures </a>  
+<a href="#3.1">3.1 Data selection</a>  
+
 <a href="#todo">TODO</a>  
 <a href="#credit">4. Credits</a>  
 
@@ -63,7 +65,7 @@ Jupyter notebooks and Python code for analyzing air quality (fine particles, PM<
 
 <a id="2.2.2"></a>
 ### 2.2 Correlation with wind and temperature (analysis)
-- explore correlation between meteorological paramters to observed PM<sub>2.5<sub> concentration such wind, temperature, height above ground
+- explore correlation between meteorological paramters to observed PM<sub>2.5</sub> concentration such wind, temperature, height above ground
 - capture espisode and examine relevant inputs with PM<sub>2.5</sub>
 - some examples from this exercise
   - correlation graph:
@@ -104,7 +106,7 @@ Jupyter notebooks and Python code for analyzing air quality (fine particles, PM<
   </p>
 
 <a id="2.4"></a>
-### Conversion wind (U,V) component, RH from temperatures
+### 2.4 Conversion wind (U,V) component, RH from temperatures
 - a detour to look at conversion of wind data (U, V) vectors to speed and direction in degree
 - how to use **MetPy** packages calculate such conversion instead of manually undertake
 - explore data for the next which is selecting relevant data for predicting PM<sub>2.5</sub>
@@ -124,6 +126,14 @@ Jupyter notebooks and Python code for analyzing air quality (fine particles, PM<
         <img src="img/2020Aug_wind_corr_heights_inc.png"/>
       </p>
     
+<a id="3.1"></a>
+### 3.1 Data selection
+- combine three sources of data fromt the previous exercise
+  - PM<sub>2.5</sub> from airnow.gov
+  - Ground observed data from ncei.noaa.gov
+  - Reanalysis data from MERRA-2 product, SLV and FLX groups (or tags)
+- remove dependent data and data with weak (very weak) correlation with PM<sub>2.5</sub>
+- here is outcome of this excercise:
 
 
 <a id="todo"></a>
