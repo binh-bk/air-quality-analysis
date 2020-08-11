@@ -13,6 +13,7 @@ Jupyter notebooks and Python code for analyzing air quality (fine particles, PM<
 <a href="#3.1">3.1 Data selection</a>  
 
 <a href="#todo">TODO</a>  
+<a href="#tools">Tool and packages</a>  
 <a href="#credit">4. Credits</a>  
 
 
@@ -133,15 +134,52 @@ Jupyter notebooks and Python code for analyzing air quality (fine particles, PM<
   - Ground observed data from ncei.noaa.gov
   - Reanalysis data from MERRA-2 product, SLV and FLX groups (or tags)
 - remove dependent data and data with weak (very weak) correlation with PM<sub>2.5</sub>
-- here is outcome of this excercise:
-
-
+- here is outcome of this exercise:
+  - preliminary heatmap (of all most input parameters, don't worry about the name just yet):
+        <p align="center">
+        <img src="img/2020Aug-corr-heatmap.png"/>
+      </p>
+      
+  
+  - a final version of selected data with correlation with PM<sub>2.5</sub>
+        <p align="center">
+        <img src="img/2020Aug-PM25-selected.png"/>
+      </p>
+      
+  - and if you are curious about the full name of each paramters. Note that in the final version of CSV data, all temperature was converted 
+   ```
+   {'TQV': 'total_precipitable_water_vapor, kg m-2',
+   'T2MDEW': 'dew_point_temperature_at_2_m, K',
+   'HLML': 'surface_layer_height, m',
+   'FRCAN': 'areal_fraction_of_anvil_showers, 1',
+   'T2M': '2-meter_air_temperature, K',
+   'WS': 'observed ground wind speed, m/s',
+   'DISPH': 'zero_plane_displacement_height, m',
+   'TQL': 'total_precipitable_liquid_water, kg m-2',
+   'v_50m': 'wind speed at 50m, m/s',
+   'v_850': 'wind speed at 850hPa (~1450m)',
+   'v_2m': 'wind speed at 2m, m/s',
+   'CLDCR': 'cloud cover, 1',
+   'CIG': 'ceiling height dimension, m',
+   'PS': 'surface_pressure, Pa',
+   'RHOA': 'air_density_at_surface, kg m-3',
+   'H1000': 'height_at_1000_mb, m'}
+   ```
 <a id="todo"></a>
 # TODO
 ## building prediction
+ ### linear regression
+ ### Keras (with TensorFlow)
 
-
-## tools
+<a id='tools'></a>
+## tools and packages
+- the analysis is carried out on Jupyter Notebook (and later with Jupyter Lab 2.2), Ubuntu 18.04LTS. 
+- Python (3.6.9)
+- Matplotlib (3.1.2)
+- pandas (0.25.3)
+- Seaborn (0.9.0)
+- windrose (N/A)
+- MetPy (1.0.0)
 
 <a id="credit"></a>
 ## Credits:
