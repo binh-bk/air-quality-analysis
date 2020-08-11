@@ -136,15 +136,15 @@ Jupyter notebooks and Python code for analyzing air quality (fine particles, PM<
 - remove dependent data and data with weak (very weak) correlation with PM<sub>2.5</sub>
 - here is outcome of this exercise:
   - preliminary heatmap (of all most input parameters, don't worry about the name just yet):
-        <p align="center">
+      <p align="center">
         <img src="img/2020Aug-corr-heatmap.png"/>
       </p>
       
   
   - a final version of selected data with correlation with PM<sub>2.5</sub>
-        <p align="center">
-        <img src="img/2020Aug-PM25-selected.png"/>
-      </p>
+    <p align="center">
+      <img src="img/2020Aug-PM25-selected.png"/>
+    </p>
       
   - and if you are curious about the full name of each paramter, here it is. Note that in the final version of CSV data, all temperature was converted from Kelvin (K) to Celsius (C).
    ```
