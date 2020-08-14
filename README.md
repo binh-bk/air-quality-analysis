@@ -11,7 +11,7 @@ Jupyter notebooks and Python code for analyzing air quality (fine particles, PM<
   <a href="#2.3">2.3 Correlation with MERRA-2 data</a>  
   <a href="#2.4">2.4 Conversion wind (U,V) component, RH from temperatures </a>  
 <a href="#3.1">3.1 Data selection</a>  
-<a href="#3.2">3.1 Regression</a>  
+<a href="#3.2">3.2 Regression</a>  
 
 <a href="#todo">TODO</a>  
 <a href="#tools">Tool and packages</a>  
@@ -192,7 +192,6 @@ Jupyter notebooks and Python code for analyzing air quality (fine particles, PM<
 <a id="todo"></a>
 # TODO
 ## building prediction
- ### linear regression
  ### Keras (with TensorFlow)
 
 <a id='tools'></a>
