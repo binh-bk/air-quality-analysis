@@ -11,11 +11,13 @@ Jupyter notebooks and Python code for analyzing air quality (fine particles, PM<
   <a href="#2.3">2.3 Correlation with MERRA-2 data</a>  
   <a href="#2.4">2.4 Conversion wind (U,V) component, RH from temperatures </a>  
 <a href="#3.1">3.1 Data selection</a>  
+<a href="#3.2">3.1 Regression</a>  
 
 <a href="#todo">TODO</a>  
 <a href="#tools">Tool and packages</a>  
 <a href="#credit">4. Credits</a>  
 
+***PDF version is in PDF folder, likewise HTML's***
 
 <a id="1"></a>
 ## 1. Basic data visualization
@@ -164,7 +166,32 @@ Jupyter notebooks and Python code for analyzing air quality (fine particles, PM<
    'PS': 'surface_pressure, Pa',
    'RHOA': 'air_density_at_surface, kg m-3',
    'H1000': 'height_at_1000_mb, m'}
-   ```
+  ```
+<a id="3.2"></a>
+### 3.1 Regression
+- Work with `Scikit-learn` library with regression models such Linear, DecisionTree, RandomForest
+- Evaluate performance of each model and an ensamble by PM<sub>2.5</sub> and meteorological data for Hanoi, 2018. Datasets are cleaned and reduced from the previous excercise
+- Apply a model with less feastures (DarkSky), but easiler to extract via API.
+- Graphs from this excercise:
+  - perfomance on train dataset (using ensemble regression)
+    <p align="center">
+      <img src="img/img/en_reg_959.png"/>
+    </p>
+  https://github.com/binh-bk/air-quality-analysis/blob/master/
+  
+  - performance on test dataset 
+    <p align="center">
+      <img src="img/img/en_reg_326.png"/>
+    </p>
+  
+  https://github.com/binh-bk/air-quality-analysis/blob/master/
+  
+  - relative standard deviation on each model (lower is better)
+  
+  <p align="center">
+    <img src="img/mg/2020Aug_rmse_rsd.png"/>
+  </p>
+
 <a id="todo"></a>
 # TODO
 ## building prediction
@@ -184,6 +211,8 @@ Jupyter notebooks and Python code for analyzing air quality (fine particles, PM<
 <a id="credit"></a>
 ## Credits:
 - some of the writing and coding are carried out while I were working with [PAM Air](pamair.org) project.  I appreciate the flexiblity from the management so that I can make this happen.
+- Books: 
+  - [Hands-On Machine Learning with Scikit-Learn and TensorFlow, Aurélion Géron](https://www.oreilly.com/library/view/hands-on-machine-learning/9781491962282/)
 
 ## If this work is helpful to your research
 - Admittedly, citing Github repository or other open project is new, but if this work is helpful for your work, I would appreciate the attribution, a link or a word.
