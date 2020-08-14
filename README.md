@@ -175,21 +175,18 @@ Jupyter notebooks and Python code for analyzing air quality (fine particles, PM<
 - Graphs from this excercise:
   - perfomance on train dataset (using ensemble regression)
     <p align="center">
-      <img src="img/img/en_reg_959.png"/>
+      <img src="img/en_reg_959.png"/>
     </p>
-  https://github.com/binh-bk/air-quality-analysis/blob/master/
   
   - performance on test dataset 
     <p align="center">
-      <img src="img/img/en_reg_326.png"/>
+      <img src="img/en_reg_326.png"/>
     </p>
-  
-  https://github.com/binh-bk/air-quality-analysis/blob/master/
-  
+
   - relative standard deviation on each model (lower is better)
   
   <p align="center">
-    <img src="img/mg/2020Aug_rmse_rsd.png"/>
+    <img src="img/2020Aug_rmse_rsd.png"/>
   </p>
 
 <a id="todo"></a>
