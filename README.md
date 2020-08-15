@@ -203,6 +203,8 @@ Jupyter notebooks and Python code for analyzing air quality (fine particles, PM<
 - Seaborn (0.9.0)
 - windrose (N/A)
 - MetPy (1.0.0)
+- scikit-learn (sklearn - 0.22.1)
+- scipy (1.4.1)
 
 <a id="credit"></a>
 ## Credits:
