@@ -148,7 +148,7 @@ Jupyter notebooks and Python code for analyzing air quality (fine particles, PM<
       <img src="img/2020Aug-PM25-selected.png"/>
     </p>
       
-  - and if you are curious about the full name of each paramter, here it is. Note that in the final version of CSV data, all temperature was converted from Kelvin (K) to Celsius (C).
+  - and if you are curious about the full name of each parameter, here it is. Note that in the final version of CSV data, all temperature was converted from Kelvin (K) to Celsius (C).
    ```
    {'TQV': 'total_precipitable_water_vapor, kg m-2',
    'T2MDEW': 'dew_point_temperature_at_2_m, K',
@@ -188,7 +188,12 @@ Jupyter notebooks and Python code for analyzing air quality (fine particles, PM<
   <p align="center">
     <img src="img/2020Aug_rmse_rsd.png"/>
   </p>
-
+- an hourly update web-interface using the same concept can be found here with selected sites at my personal website [b-io.info](https://b-io.info/airs/forecast/)
+  - screenshot example:
+  <p align="center">
+    <img src="img/screenshot_forecast.png"/>
+  </p>
+  
 <a id="todo"></a>
 # TODO
 ## building prediction
