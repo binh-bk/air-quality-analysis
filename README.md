@@ -194,11 +194,6 @@ Jupyter notebooks and Python code for analyzing air quality (fine particles, PM<
     <img src="img/screen_forecast.png"/>
   </p>
   
-<a id="todo"></a>
-# TODO
-## building prediction
- ### Keras (with TensorFlow)
-
 <a id='tools'></a>
 ## tools and packages
 - the analysis is carried out on Jupyter Notebook (and later with Jupyter Lab 2.2), Ubuntu 18.04LTS. 
@@ -224,3 +219,8 @@ Jupyter notebooks and Python code for analyzing air quality (fine particles, PM<
 ## If this work is helpful to your research
 - Admittedly, citing Github repository or other open project is new, but if this work is helpful for your work, I would appreciate the attribution, a link or a word.
 - To cite this work, use this `Binh Nguyen, Air Quality Analysis, GitHub repository: https://github.com/binh-bk/air-quality-analysis`
+
+<a id="todo"></a>
+# TODO
+### Keras (with TensorFlow)
+- experiment with LSTM is not yet promising.
