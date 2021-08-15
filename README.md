@@ -188,7 +188,7 @@ Jupyter notebooks and Python code for analyzing air quality (fine particles, PM<
   <p align="center">
     <img src="img/2020Aug_rmse_rsd.png"/>
   </p>
-- an hourly update web-interface using the same concept can be found here with selected sites at my personal website [b-io.info](https://b-io.info/airs/forecast/)
+- an hourly update web-interface using the same concept can be found here with selected sites at my personal website [b-io.info](https://b-io.info/data/pm25-forecast/)
   - screenshot example:
   <p align="center">
     <img src="img/screen_forecast.png"/>
