@@ -208,7 +208,7 @@ Jupyter notebooks and Python code for analyzing air quality (fine particles, PM<
 
 <a id="credit"></a>
 ## Credits:
-- some of the writing and coding are carried out while I were working with [PAM Air](pamair.org) project.  I appreciate the flexiblity from the management so that I can make this happen.
+- some of the writing and coding are carried out while I were working with [PAM Air](https://pamair.org) project.  I appreciate the flexiblity from the management so that I can make this happen.
 - Books: 
   - [Python for Data Analysis: Data Wrangling with Pandas, NumPy, and IPython by Wes McKinney](https://www.amazon.com/Python-Data-Analysis-Wrangling-IPython)
   - [Hands-On Machine Learning with Scikit-Learn and TensorFlow, Aurélion Géron](https://www.oreilly.com/library/view/hands-on-machine-learning/9781491962282/)
